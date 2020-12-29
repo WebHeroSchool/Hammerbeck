@@ -1,14 +1,16 @@
 
 .main{
-  padding: 76px 69% 250px 0;
+  padding: 76px 63% 180px 0;
   background: top  right no-repeat url(img/mainimg.svg);
 
 }
 .main__title {
   margin: 0px 0 40px 0;
-      font: bold 66px/85px pt_serif ;
+  font:bold 66px/85px PT Serif, arial, helvetica, sans-serif;
+  letter-spacing: 0.02em;
 }
 .main__subtitle{
+  width: 80%;
   margin: 0 0 41px 0;
   font: 22px/26px Roboto, arial, helvetica, sans-serif;
 }
@@ -24,6 +26,19 @@
 }
 .main__button:hover{
   opacity: .5;
+}
+.slider{
+  margin-left: 742px;
+  margin-top:82px;
+}
+.cirkle{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position:relative;
+  display: inline-block;
+  background: #C8DBFB;
+  opacity: .7;
 }
 .main__title-text_highlight{
   background: #ECF3FF;
