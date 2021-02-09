@@ -165,7 +165,9 @@ width: 100%;
   .header{
     margin-bottom: 83px;
   }
-
+  .menu{
+    margin-left: 414px;
+  }
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     margin-right: 24px;
