@@ -67,6 +67,7 @@ margin: 0;
 .menu {
   display: flex;
   align-items: center;
+  padding-left: 950px;
 }
 .menu__item {
   position: relative;
@@ -116,7 +117,7 @@ opacity: 1;
 width: 100%;
 
 }
-@media (max-width: 14500px){
+@media (max-width: 1450px){
   .wrapper{
     margin: 0 218px;
     width: 68%;
@@ -125,7 +126,7 @@ width: 100%;
     margin-bottom: 83px;
   }
 .menu{
-  margin-left: 410px;
+  padding-left: 410px;
 }
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
@@ -166,7 +167,7 @@ width: 100%;
     margin-bottom: 83px;
   }
   .menu{
-    margin-left: 414px;
+    padding-left: 414px;
   }
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
