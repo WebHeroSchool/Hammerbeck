@@ -116,6 +116,47 @@ opacity: 1;
 width: 100%;
 
 }
+@media (max-width: 14500px){
+  .wrapper{
+    margin: 0 218px;
+    width: 68%;
+  }
+  .header{
+    margin-bottom: 83px;
+  }
+.menu{
+  margin-left: 410px;
+}
+  .menu__item {
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    margin-right: 24px;
+  }
+  .main{
+    padding: 0 50% 100px 0;
+    background-size: 55%;
+    background-position: top right;
+
+  }
+  .main__title{
+    padding-top: 13px;
+    margin-bottom:40px ;
+    font: bold 50px/65px PT Serif, arial, helvetica,sans-serif;
+    letter-spacing: 0.04em;
+  }
+  .main__subtitle{
+    margin-bottom: 41px;
+    font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
+    letter-spacing: 0.005em;
+  }
+  .main__button{
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+    padding: 14px 21px;
+  }
+  .slider{
+    margin-left: 450px;
+    margin-top:43px;
+  }
+}
 @media (max-width: 1200px){
   .wrapper{
     margin: 0 46px;
