@@ -272,12 +272,11 @@ width: 100%;
   display: block;
   position: fixed;
   visibility: hidden;
-  top: 0;
-  left: 100%;
+  top:0;
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 186px 0 205px 0;
+  padding: 172px 0 205px 0;
   list-style: none;
   text-align: center;
   background-color: #fff;
@@ -286,7 +285,7 @@ width: 100%;
 
 .menu__item {
   display: block;
-  padding: 24px 24px;
+  padding: 22px 0 23px 0;
   color: #000;
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
