@@ -1,6 +1,6 @@
 
 .main{
-  padding: 76px 63% 180px 0;
+  padding: 76px 63% 269px 0;
   background: top  right no-repeat url(img/mainimg.svg);
 
 }
@@ -27,12 +27,13 @@
   opacity: .5;
 }
 .slider{
-  margin-left: 742px;
-  margin-top:82px;
+  display: flex;
+  justify-content:center;
 }
 .circle{
   width: 8px;
   height: 8px;
+  margin-right: 4px;
   border-radius: 50%;
   position:relative;
   display: inline-block;
@@ -64,10 +65,13 @@ margin: 0;
   margin-bottom: 130px;
 
 }
+.hamburger-menu{
+  display: none;
+}
 .menu {
   display: flex;
   align-items: center;
-  padding-left: 950px;
+
 }
 .menu__item {
   position: relative;
@@ -125,15 +129,13 @@ width: 100%;
   .header{
     margin-bottom: 83px;
   }
-.menu{
-  padding-left: 410px;
-}
+
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     margin-right: 24px;
   }
   .main{
-    padding: 0 50% 100px 0;
+    padding: 0 50% 147px 0;
     background-size: 55%;
     background-position: top right;
 
@@ -152,10 +154,6 @@ width: 100%;
   .main__button{
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     padding: 14px 21px;
-  }
-  .slider{
-    margin-left: 450px;
-    margin-top:43px;
   }
 }
 @media (max-width: 1200px){
@@ -166,15 +164,12 @@ width: 100%;
   .header{
     margin-bottom: 83px;
   }
-  .menu{
-    padding-left: 414px;
-  }
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     margin-right: 24px;
   }
   .main{
-    padding: 0 50% 100px 0;
+    padding: 0 55% 147px 0;
     background-size: 55%;
     background-position: top right;
 
@@ -194,30 +189,33 @@ width: 100%;
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
     padding: 14px 21px;
   }
-  .slider{
-    margin-left: 450px;
-    margin-top:43px;
-  }
 }
 @media (max-width: 768px) {
   .menu{
     display: none;
   }
+  .wrapper{
+    margin: 0 24px;
+    width: 87%;
+  }
   .header{
-    margin-bottom: 28px;
+    padding: 24px 0 28px 0;
+    margin: 0;
   }
   .main{
     text-align: center;
-    padding: 74% 0 0;
+    padding: 64% 0 0;
     background-size: 74%;
     background-position: top center;
   }
   .main__title{
-    margin-bottom: 44px;
+    margin-bottom: 32px;
+    padding-top:22px;
     font: bold 30px/39px PT Serif, arial, helvetica,sans-serif;
   }
   .main__subtitle{
     margin-bottom: 25px;
+    padding: 0 25px 0 25px;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
   }
   .main__button{
@@ -228,11 +226,84 @@ width: 100%;
     height: 35px;
     background: url('img/logo1.svg');
 }
-.line{
-    width: 25px;
-    height: 3px;
-    position:relative;
-    margin-top: 4px;
-    background: #0056EC;
+.slider{
+  display:none;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.hamburger-menu{
+  display: flex;
+  }
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 25px;
+  height: 26px;
+  margin-top: -17px;
+  cursor: pointer;
+  z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #0056EC;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -7px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 7px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 186px 0 205px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+.menu__item {
+  display: block;
+  padding: 24px 24px;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
 }
 }
