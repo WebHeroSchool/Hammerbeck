@@ -233,7 +233,7 @@ width: 100%;
   opacity: 0;
 }
 .hamburger-menu{
-  display: flex;
+  display:block;
   }
 .menu__btn {
   display: flex;
