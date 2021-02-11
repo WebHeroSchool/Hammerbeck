@@ -10,6 +10,7 @@
   letter-spacing: 0.03em;
 }
 .main__subtitle{
+  width: 455px;
   margin: 0 0 41px 0;
   font: 22px/26px Roboto, arial, helvetica, sans-serif;
 }
@@ -132,7 +133,7 @@ width: 100%;
 
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
-    margin-right: 24px;
+    margin-right: 27px;
   }
   .main{
     padding: 0 50% 147px 0;
@@ -147,6 +148,7 @@ width: 100%;
     letter-spacing: 0.04em;
   }
   .main__subtitle{
+    width: 367px;
     margin-bottom: 41px;
     font: 500 18px/21px Roboto, arial, helvetica, sans-serif;
     letter-spacing: 0.005em;
@@ -166,7 +168,7 @@ width: 100%;
   }
   .menu__item {
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
-    margin-right: 24px;
+    margin-right: 26px;
   }
   .main{
     padding: 0 55% 147px 0;
@@ -196,7 +198,7 @@ width: 100%;
   }
   .wrapper{
     margin: 0 24px;
-    width: 87%;
+    width: 86%;
   }
   .header{
     padding: 24px 0 28px 0;
@@ -204,21 +206,23 @@ width: 100%;
   }
   .main{
     text-align: center;
-    padding: 64% 0 0;
-    background-size: 74%;
+    padding: 70% 0 0 10px;
+    background-size: 85%;
     background-position: top center;
   }
   .main__title{
     margin-bottom: 32px;
-    padding-top:22px;
+    padding:35px 0 0 0;
     font: bold 30px/39px PT Serif, arial, helvetica,sans-serif;
   }
   .main__subtitle{
-    margin-bottom: 25px;
-    padding: 0 25px 0 25px;
+    width: 275px;
+    margin: auto;
+    padding:0 0 26px 0;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
   }
   .main__button{
+    margin:auto;
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   }
   .logo{
@@ -234,6 +238,7 @@ width: 100%;
 }
 .hamburger-menu{
   display:block;
+
   }
 .menu__btn {
   display: flex;
