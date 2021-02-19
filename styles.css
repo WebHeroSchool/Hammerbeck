@@ -120,8 +120,11 @@ margin: 0;
 .menu__item:hover:after, .menu__item_active::after{
 opacity: 1;
 width: 100%;
-
 }
+  .main__button:hover{
+    background: #00AD9F;
+    transition: .3s;
+  }
 @media (max-width: 1450px){
   .wrapper{
     margin: 0 218px;
@@ -293,7 +296,19 @@ width: 100%;
   text-decoration: none;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: #00AD9F;
+}
+.menu__item:hover:after{
+  height: 0;
+  background:#00AD9F;
+}
+.menu__item:after{
+  position: absolute;
+  display: block;
+  content:"";
+  width: 0;
+  height: 0;
+  background:##00AD9F;
 }
 #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
@@ -309,5 +324,16 @@ width: 100%;
 #menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  transition-duration: .25s;
+}
+.menu__box {
+  transition-duration: .25s;
+}
+.menu__item {
+  transition-duration: .25s;
 }
 }
